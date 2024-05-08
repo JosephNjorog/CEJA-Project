@@ -1,0 +1,2 @@
+export const CONTRACT_ADDRESS = '0x...YOUR_CONTRACT_ADDRESS...';
+export const CONTRACT_ABI = [...YOUR_CONTRACT_ABI...];
