@@ -1,62 +1,197 @@
-# CEJA-Project
+<!-- TITLE -->
+<p align="center"> 
+  <img width="100px" src="https://github.com/celo-org/celo-composer/blob/main/images/readme/celo_isotype.svg" align="center" alt="Celo" />
+ <h2 align="center">Celo Composer</h2>
+ <p align="center">Build, deploy, and iterate quickly on decentralized applications using Celo.</p>
+</p>
+  <p align="center">
+    <a href="https://github.com/celo-org/celo-composer/graphs/stars">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/stars/celo-org/celo-composer?color=FCFF52" />
+    </a>
+    <a href="https://github.com/celo-org/celo-composer/graphs/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/celo-org/celo-composer?color=E7E3D4" />
+    </a>
+    <a href="https://github.com/celo-org/celo-composer/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/celo-org/celo-composer?color=E7E3D4" />
+    </a>
+    <a href="https://github.com/celo-org/celo-composer/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/celo-org/celo-composer?color=E7E3D4" />
+    </a>
+    <a href="https://opensource.org/license/mit/">
+      <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    </a>
+  </p>
+</p>
 
+<!-- TABLE OF CONTENTS -->
 
-When developing a smart contract for deployment on the Ethereum blockchain, you typically need to create several files to manage your project effectively. Here's a list of files commonly used in Ethereum smart contract development:
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-1. **Solidity Contract File (.sol):**
-   - This file contains the Solidity code for your smart contract. It defines the contract's structure, functions, variables, and any other necessary components. You can name this file based on your contract's name, for example, `MyContract.sol`.
+<!-- ABOUT THE PROJECT -->
 
-2. **Deployment Script (Optional - .js or .py):**
-   - This script is used to deploy your smart contract to the Ethereum blockchain. It interacts with a web3 provider (like Infura) to deploy the contract and can perform additional setup tasks. You can use JavaScript (.js) or Python (.py) for this script.
+## About The Project
 
-3. **Configuration File (Optional - .json or .yml):**
-   - This file contains configuration parameters for your smart contract project, such as contract addresses, network settings, and compiler versions. It helps streamline the deployment process and manage project settings. You can use JSON (.json) or YAML (.yml) format for this file.
+Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of frameworks, examples, and Celo specific functionality to help you get started with your next dApp.
 
-4. **Test Files (Optional - .js, .py, .sol):**
-   - Test files are used to write automated tests for your smart contract code. They verify that your contract behaves as expected under different conditions and edge cases. Test files can be written in JavaScript (.js), Python (.py), or Solidity (.sol) using frameworks like Truffle, Hardhat, or Brownie.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-5. **README File (.md):**
-   - This file provides documentation and instructions for your smart contract project. It includes information about how to set up, deploy, and interact with your contract, as well as any other relevant details about the project structure and functionality. You can use Markdown (.md) format for this file.
+## Built With
 
-6. **License File (Optional - .md):**
-   - This file contains the license terms and conditions for your smart contract project. It specifies how others can use, modify, and distribute your code, helping ensure legal compliance and protect your intellectual property rights. You can choose a standard open-source license or create a custom one. Use Markdown (.md) format for this file.
+Celo Composer is built on Celo to make it simple to build dApps using a variety of front-end frameworks, and libraries.
 
-7. **Development Environment Configuration (Optional - .env):**
-   - This file contains environment variables and settings specific to your development environment, such as API keys, network endpoints, and private keys. It helps manage sensitive information and configure your development environment easily. You can use a plain text (.env) format for this file.
+- [Celo](https://celo.org/)
+- [Solidity](https://docs.soliditylang.org/en/v0.8.19/)
+- [Next.js](https://nextjs.org/)
+- [React.js](https://reactjs.org/)
+- [Material UI](https://mui.com/)
+- [React Native](https://reactnative.dev/)
+- [Flutter](https://docs.flutter.dev/)
+- [React-celo](https://github.com/celo-org/react-celo/)
+- [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-These are the main files commonly used in Ethereum smart contract development. Depending on your project requirements and development workflow, you may include additional files or organize your project differently.
+<!-- GETTING STARTED -->
 
-# Frontend
-## Setup Your React Project:
-If you haven't already, set up your React project. You can do this using Create React App or any other method you prefer.
+## Prerequisites
 
-## Install Web3.js:
-Web3.js is a library that allows your frontend to interact with Ethereum nodes. Install it in your React project using npm:
+- Node
+- Git (v2.38 or higher)
 
-`npm install web3`
+## How to use Celo Composer
 
-## Connect to Ethereum Network:
-Use Web3.js to connect to an Ethereum network. You can connect to a local Ethereum node (like Ganache) during development or use a provider like Infura for connecting to the Ethereum mainnet or testnets.
+The easiest way to start with Celo Composer is using `@celo/celo-composer`. This CLI tool lets you quickly start building dApps on Celo for multiple frameworks, including React (with either react-celo or rainbowkit-celo), React Native (w/o Expo), Flutter, and Angular. To get started, just run the following command, and follow the steps:
 
-## Import Smart Contracts:
-Import your compiled smart contracts or their ABIs (Application Binary Interface) into your React project. You can use the artifacts generated by Truffle or manually copy the ABIs.
+```bash
+npx @celo/celo-composer@latest create
+```
 
-## Initialize Web3:
-Initialize Web3.js with your chosen provider (local node, Infura, etc.) and set it up to use the ABI and contract address of your smart contract.
+### Front-end framework
 
-## Interact with Smart Contracts:
+![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_1.png?raw=true)
 
-Use Web3.js to interact with your smart contracts from your React components. You can call functions, send transactions, and listen to events emitted by your contracts.
+### Web3 library (for react-app)
 
-## Update the UI:
-Update your React components to display data from your smart contracts and allow users to interact with them. You can use state management libraries like Redux or Context API to manage contract data in your application state.
+![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_2.png?raw=true)
 
-## Handle Transactions:
-Handle user transactions by prompting them to sign transactions using their Ethereum wallet (e.g., MetaMask) when interacting with your smart contracts.
+### Smart contract framework
 
-## Test Your Application:
-Test your React application to ensure that it properly interacts with your Solidity smart contracts. Use tools like MetaMask and Remix for debugging and testing.
+![Celo Composer tool selection](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_3.png?raw=true)
 
-## Deploy Your Application:
-Once your application is ready, deploy it to a hosting provider. Make sure to configure your frontend to connect to the appropriate Ethereum network.
+### Subgraph
+
+![Celo Composer subgraph support](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_4.png?raw=true)
+
+### Name your dApp
+
+![Celo Composer dApp name](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_5.png?raw=true)
+
+**_🔥Voila, you have a dApp ready to go. Voila, you have a dApp ready to go. Start building your dApp on Celo._**
+
+### Getting started
+
+Once your custom dApp has been created, just install dependencies, either with `yarn` or `npm i`, and run the respective script from the `package.json` file.
+## Supported Frameworks
+
+### React
+
+- Support for Website and Progressive Web Application.
+- Works with all major crypto wallets.
+
+Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/react-app/README.md) to learn more about.
+
+### React Native
+
+- Out of the box config, just focus on buidl.
+- Support for Android and IOS.
+- Works with and without [Expo](https://expo.dev/).
+- Working example app included.
+
+Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/react-native-app/README.md) to learn more about.
+
+### Flutter
+
+- One command to get started - Type `flutter run` to start development in your mobile phone.
+- Works with all major mobile crypto wallets.
+- Support for Android, IOS (Web, Windows, and Linux coming soon).
+- Working example app included.
+
+Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/flutter-app/README.md) to learn more about.
+
+### Angular
+
+- Support for Website and Progressive Web Application.
+- Works with all major crypto wallets.
+
+Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/angular-app/README.md) to learn more about.
+
+<!-- USAGE EXAMPLES -->
+
+## 🔭 Learning Solidity
+
+📕 Read the docs: <https://docs.soliditylang.org>
+
+- [Primitive Data Types](https://solidity-by-example.org/primitives/)
+- [Mappings](https://solidity-by-example.org/mapping/)
+- [Structs](https://solidity-by-example.org/structs/)
+- [Modifiers](https://solidity-by-example.org/function-modifier/)
+- [Events](https://solidity-by-example.org/events/)
+- [Inheritance](https://solidity-by-example.org/inheritance/)
+- [Payable](https://solidity-by-example.org/payable/)
+- [Fallback](https://solidity-by-example.org/fallback/)
+
+📧 Learn the [Solidity globals and units](https://solidity.readthedocs.io/en/v0.8.19/units-and-global-variables.html)
+
+## Support
+
+Join the Celo Discord server at <https://chat.celo.org>. Reach out on the dedicated repo channel [here](https://discord.com/channels/600834479145353243/941003424298856448).
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/celo-org/celo-composer/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+We welcome contributions from the community.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<!-- CONTACT -->
+## Contact
+
+- [@CeloDevs](https://twitter.com/CeloDevs)
+- [Discord](https://discord.com/invite/celo)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
