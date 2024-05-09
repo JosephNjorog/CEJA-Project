@@ -8,11 +8,11 @@ const tokens = (n) => {
 const ether = tokens
 
 describe('RealEstate', () => {
-  let realEstate
+  let realEstate, escrow
   let deployer, seller, buyer, inspector, lender
   let nftId = 1
   let purchasePrice = ether(100)
- 
+  let escrowAmount = ether(20)
 
   beforeEach(async () => {
     // Setup accounts
@@ -20,18 +20,29 @@ describe('RealEstate', () => {
     deployer = accounts[0]
     seller = deployer
     buyer = accounts[1]
-    
+    inspector = accounts[2]
+    lender = accounts[3]
 
     // Load contracts
     const RealEstate = await ethers.getContractFactory('RealEstate')
-  
+    const Escrow = await ethers.getContractFactory('Escrow')
+
     // Deploy contracts
     realEstate = await RealEstate.deploy()
 
-   
+    escrow = await Escrow.deploy(
+      realEstate.address,
+      nftId,
+      purchasePrice,
+      escrowAmount,
+      seller.address,
+      buyer.address,
+      inspector.address,
+      lender.address
+    )
 
     // Seller Approves NFT
-    transaction = await realEstate.connect(seller).approve(nftId)
+    transaction = await realEstate.connect(seller).approve(escrow.address, nftId)
     await transaction.wait()
   })
 
@@ -56,8 +67,17 @@ describe('RealEstate', () => {
 
       // Buyer Deposits Earnest
       console.log("Buyer deposits earnest money")
-      transaction = await escrow.connect(buyer).depositEarnest({ value: purchasePrice })
+      transaction = await escrow.connect(buyer).depositEarnest({ value: escrowAmount })
       await transaction.wait()
+
+      // Check escrow balance
+      balance = await escrow.getBalance()
+      console.log("escrow balance:", ethers.utils.formatEther(balance))
+
+      // Inspector updates status
+      transaction = await escrow.connect(inspector).updateInspectionStatus(true)
+      await transaction.wait()
+      console.log("Inspector updates status")
 
       // Buyer Approves sale
       transaction = await escrow.connect(buyer).approveSale()
@@ -68,6 +88,14 @@ describe('RealEstate', () => {
       transaction = await escrow.connect(seller).approveSale()
       await transaction.wait()
       console.log("Seller approves sale")
+
+      // Lender funds sale
+      transaction = await lender.sendTransaction({ to: escrow.address, value: ether(80) })
+
+      // Lender Approves sale
+      transaction = await escrow.connect(lender).approveSale()
+      await transaction.wait()
+      console.log("Lender approves sale")
 
       // Finalize sale
       transaction = await escrow.connect(buyer).finalizeSale()
