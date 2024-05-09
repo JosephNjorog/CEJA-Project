@@ -1,9 +1,11 @@
 const { expect } = require("chai"); 
 const { ethers } = require("hardhat"); 
+
 describe("RealEstate contract", function () {
   let realEstate;
   let owner;
   let anotherAccount;
+  
 
   beforeEach(async function () {
     // Get signers from Hardhat
@@ -19,8 +21,8 @@ describe("RealEstate contract", function () {
 
   describe("Deployment", function () {
     it("Should have the correct name and symbol", async function () {
-      const name = await realEstate.name();
-      const symbol = await realEstate.symbol();
+      const owner = await realEstate.owner();
+      //const Ether = await realEstate.price();
       expect(name).to.equal("Real Estate");
       expect(symbol).to.equal("Real");
     });
