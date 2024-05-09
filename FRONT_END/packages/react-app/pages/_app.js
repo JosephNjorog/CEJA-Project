@@ -6,7 +6,7 @@ import { injectedWallet } from "@rainbow-me/rainbowkit/wallets";
 import "@rainbow-me/rainbowkit/styles.css";
 import type { AppProps } from "next/app";
 import { http, WagmiProvider, createConfig } from "wagmi";
-import Layout from "../components/Layout";
+import Layout from "../../../../Frontend/nft-marketplace-frontend/components/Layout";
 import "../styles/globals.css";
 import { celo, celoAlfajores } from "wagmi/chains";
 
