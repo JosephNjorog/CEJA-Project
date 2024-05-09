@@ -1,6 +1,5 @@
-const { expect } = require("chai"); // Use Chai for assertions
-const { ethers } = require("hardhat"); // Assume Hardhat is used for testing
-
+const { expect } = require("chai"); 
+const { ethers } = require("hardhat"); 
 describe("RealEstate contract", function () {
   let realEstate;
   let owner;
