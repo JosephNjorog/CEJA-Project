@@ -46,7 +46,7 @@ contract RealEstateNFT {
             // Add limited minting addresses here
            
             //...
-        ];
+        
     }
 
     // Mint a property NFT
