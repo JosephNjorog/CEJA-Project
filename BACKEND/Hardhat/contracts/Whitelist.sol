@@ -40,14 +40,7 @@ contract LimitedRealEstateNFT is  Ownable,ERC721 {
     return minted[addr];
   }
 
-  // The following functions are overrides required by Solidity (not modified)
-
-  // function _beforeTokenTransfer(address from, address to, uint256 tokenId)
-  //     internal
-  //     override(ERC721)
-  // {
-  //     super._beforeTokenTransfer(from, to, tokenId);
-  // }
+  
 
   function supportsInterface(bytes4 interfaceId)
       public
