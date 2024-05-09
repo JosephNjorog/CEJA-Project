@@ -10,10 +10,10 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 contract RealEstate is ERC721, ERC721URIStorage {
     
     address payable public owner;
-    constructor()
-        ERC721("Real Estate", "Real")
-        
-    { owner =msg.sender;}
+  constructor() ERC721("Real Estate", "Real") {
+  owner = msg.sender;
+}
+
 
     function safeMint(address to, uint256 tokenId, string memory uri)
         public  
