@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 contract RealEstate is ERC721, ERC721URIStorage {
     
-    address public owner = address.payable;
+    address payable public owner;
     constructor()
         ERC721("Real Estate", "Real")
         
