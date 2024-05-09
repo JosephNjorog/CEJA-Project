@@ -40,10 +40,7 @@ library Counters {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Strings.sol
 
-
-// OpenZeppelin Contracts v4.4.1 (utils/Strings.sol)
 
 pragma solidity ^0.8.0;
 
@@ -1145,7 +1142,7 @@ abstract contract ERC721URIStorage is ERC721 {
 
 // File: contracts/s.sol
 
-//SPDX-License-Identifier: Unlicense
+
 pragma solidity ^0.8.2;
 
 
