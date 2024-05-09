@@ -1,4 +1,9 @@
 // SPDX-License-Identifier: MIT
+// File: @openzeppelin/contracts/utils/Counters.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (utils/Counters.sol)
+
 pragma solidity ^0.8.0;
 
 /**
@@ -40,15 +45,12 @@ library Counters {
     }
 }
 
+// File: @openzeppelin/contracts/utils/Strings.sol
 
 
-<<<<<<< HEAD
 // OpenZeppelin Contracts v4.4.1 (utils/Strings.sol)
 
-
-=======
-
->>>>>>> f1e1d326ca2eeb19086bc8a90a638f9c3e7669d1
+pragma solidity ^0.8.0;
 
 /**
  * @dev String operations.
@@ -118,8 +120,7 @@ library Strings {
 
 // OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
 
-
-
+pragma solidity ^0.8.0;
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -146,6 +147,7 @@ abstract contract Context {
 
 // OpenZeppelin Contracts (last updated v4.5.0) (utils/Address.sol)
 
+pragma solidity ^0.8.1;
 
 /**
  * @dev Collection of functions related to the address type
@@ -370,7 +372,7 @@ library Address {
 
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/IERC721Receiver.sol)
 
-
+pragma solidity ^0.8.0;
 
 /**
  * @title ERC721 token receiver interface
@@ -400,6 +402,7 @@ interface IERC721Receiver {
 
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)
 
+pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the ERC165 standard, as defined in the
@@ -427,7 +430,7 @@ interface IERC165 {
 
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/ERC165.sol)
 
-
+pragma solidity ^0.8.0;
 
 
 /**
@@ -458,7 +461,7 @@ abstract contract ERC165 is IERC165 {
 
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/IERC721.sol)
 
-
+pragma solidity ^0.8.0;
 
 
 /**
@@ -603,7 +606,7 @@ interface IERC721 is IERC165 {
 
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/extensions/IERC721Metadata.sol)
 
-
+pragma solidity ^0.8.0;
 
 
 /**
@@ -632,7 +635,7 @@ interface IERC721Metadata is IERC721 {
 
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC721/ERC721.sol)
 
-
+pragma solidity ^0.8.0;
 
 
 
@@ -1081,6 +1084,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
 
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/extensions/ERC721URIStorage.sol)
 
+pragma solidity ^0.8.0;
 
 
 /**
@@ -1146,11 +1150,8 @@ abstract contract ERC721URIStorage is ERC721 {
 
 // File: contracts/s.sol
 
-<<<<<<< HEAD
-=======
-
+//SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.2;
->>>>>>> f1e1d326ca2eeb19086bc8a90a638f9c3e7669d1
 
 
 contract RealEstate is ERC721URIStorage  {
