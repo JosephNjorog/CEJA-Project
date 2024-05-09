@@ -62,7 +62,7 @@ contract RealEstateNFT {
     // Mint a fractional NFT
     function mintFractional(address _to, uint256 _amount) public {
         require(isMinter(msg.sender), "Only limited addresses can mint");
-        require(tokenContract.balanceOf(msg.sender) >= mintingTokenBalance, "Insufficient token balance");
+        //require(tokenContract.balanceOf(msg.sender) >= mintingTokenBalance, "Insufficient token balance");
         uint256 newTokenId = fractionalSupply++;
         fractionalOwners[newTokenId][_to] = _amount;
         fractionalBalance[_to] += _amount;
