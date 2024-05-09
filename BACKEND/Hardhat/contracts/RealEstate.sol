@@ -50,12 +50,7 @@ library Counters {
 
 // OpenZeppelin Contracts v4.4.1 (utils/Strings.sol)
 
-<<<<<<< HEAD
-
-=======
 pragma solidity ^0.8.0;
->>>>>>> 7200c7f9756fa3244f5204063b98496dd3ad039b
-
 /**
  * @dev String operations.
  */
