@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/token/ERC721/SafeERC721.sol";
+
 
 contract RealEstateNFT {
     // Mapping of property NFTs
