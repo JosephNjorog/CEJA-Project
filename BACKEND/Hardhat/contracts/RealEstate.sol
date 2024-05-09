@@ -39,7 +39,7 @@ contract RealEstateNFT {
     // Event emitted when a fractional NFT is transferred
     event FractionalTransferred(uint256 tokenId, address from, address to, uint256 amount);
 
-    constructor(ERC20 _tokenContract, uint256 _mintingTokenBalance) {
+    constructor(address _tokenContract, uint256 _mintingTokenBalance) {
         tokenContract = _tokenContract;
         mintingTokenBalance = _mintingTokenBalance;
         minters = [
