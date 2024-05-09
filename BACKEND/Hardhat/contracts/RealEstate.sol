@@ -1,3 +1,4 @@
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 
@@ -43,8 +44,7 @@ contract RealEstateNFT {
         mintingTokenBalance = _mintingTokenBalance;
         minters = [
             // Add limited minting addresses here
-            0xAddress1,
-            0xAddress2,
+           
             //...
         ];
     }
