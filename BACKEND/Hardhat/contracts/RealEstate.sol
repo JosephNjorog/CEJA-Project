@@ -19,7 +19,7 @@ contract RealEstateNFT {
     uint256 public fractionalSupply;
 
     // Token contract
-    ERC20 public tokenContract;
+    address public tokenContract;
 
     // Limited minting addresses
     address[] public minters;
