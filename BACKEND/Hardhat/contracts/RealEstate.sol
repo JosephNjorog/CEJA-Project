@@ -1148,13 +1148,8 @@ abstract contract ERC721URIStorage is ERC721 {
 }
 
 // File: contracts/s.sol
-
-<<<<<<< HEAD
-=======
-//SPDX-License-Identifier: MIT
+ // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
->>>>>>> 7200c7f9756fa3244f5204063b98496dd3ad039b
-
 
 contract RealEstate is ERC721URIStorage  {
 using Counters for Counters.Counter;
