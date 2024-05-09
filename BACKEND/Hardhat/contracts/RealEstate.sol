@@ -52,7 +52,7 @@ contract RealEstateNFT {
     // Mint a property NFT
     function mintProperty(address _to) public {
         require(isMinter(msg.sender), "Only limited addresses can mint");
-        require(tokenContract.balanceOf(msg.sender) >= mintingTokenBalance, "Insufficient token balance");
+        //require(tokenContract.balanceOf(msg.sender) >= mintingTokenBalance, "Insufficient token balance");
         uint256 newTokenId = propertySupply++;
         propertyOwners[newTokenId] = _to;
         balance[_to]++;
