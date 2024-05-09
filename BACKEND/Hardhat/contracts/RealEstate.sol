@@ -42,7 +42,7 @@ contract RealEstateNFT {
     constructor(address _tokenContract, uint256 _mintingTokenBalance) {
         tokenContract = _tokenContract;
         mintingTokenBalance = _mintingTokenBalance;
-        minters = [
+        //minters = [
             // Add limited minting addresses here
            
             //...
