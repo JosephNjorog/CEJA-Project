@@ -25,6 +25,6 @@
       "@local-contracts/*": ["../hardhat/*"]
     },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/_app.js", "pages/index.js", "../../../Frontend/nft-marketplace-frontend/components/Footer.js", "../../../Frontend/nft-marketplace-frontend/components/Header.js", "../../../Frontend/nft-marketplace-frontend/components/Layout.js"],
   "exclude": ["node_modules"]
 }

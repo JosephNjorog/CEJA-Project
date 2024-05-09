@@ -42,13 +42,9 @@ library Counters {
 
 
 
-<<<<<<< HEAD
 // OpenZeppelin Contracts v4.4.1 (utils/Strings.sol)
 
 
-=======
-
->>>>>>> f1e1d326ca2eeb19086bc8a90a638f9c3e7669d1
 
 /**
  * @dev String operations.
@@ -1146,11 +1142,6 @@ abstract contract ERC721URIStorage is ERC721 {
 
 // File: contracts/s.sol
 
-<<<<<<< HEAD
-=======
-
-pragma solidity ^0.8.2;
->>>>>>> f1e1d326ca2eeb19086bc8a90a638f9c3e7669d1
 
 
 contract RealEstate is ERC721URIStorage  {
