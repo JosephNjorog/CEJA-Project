@@ -4,15 +4,15 @@ const { ethers } = require('hardhat');
 const tokens = (n) => {
   return ethers.utils.parseUnits(n.toString(), 'ether')
 }
-
+const ether = tokens;
 
 
 describe('RealEstate', () => {
   let realEstate, escrow
   let deployer, seller, buyer, inspector, lender
   let nftId = 1
-  let purchasePrice = ether(100)
-  let escrowAmount = ether(20)
+  let purchasePrice = tokens(100)
+  let escrowAmount = tokens(20)
 
   beforeEach(async () => {
     // Setup accounts
@@ -108,7 +108,7 @@ describe('RealEstate', () => {
       // Expect Seller to receive Funds
       balance = await ethers.provider.getBalance(seller.address)
       console.log("Seller balance:", ethers.utils.formatEther(balance))
-      expect(balance).to.be.above(ether(10099))
+      expect(balance).to.be.above(tokens(10099))
     })
 
   })
