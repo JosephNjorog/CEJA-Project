@@ -1150,7 +1150,7 @@ abstract contract ERC721URIStorage is ERC721 {
 
 // File: contracts/s.sol
 
-//SPDX-License-Identifier: Unlicense
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
 
 
