@@ -47,7 +47,7 @@ library Counters {
 
 
 =======
-pragma solidity ^0.8.0;
+
 >>>>>>> f1e1d326ca2eeb19086bc8a90a638f9c3e7669d1
 
 /**
