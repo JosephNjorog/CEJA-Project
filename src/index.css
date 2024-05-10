@@ -80,7 +80,7 @@ nav {
   color: var(--clr-white);
 
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
 
   font-family: "Open Sans";
   font-size: 1.10em;
@@ -91,7 +91,7 @@ nav {
 }
 
 .nav__connect:hover {
-  background-color: var(--clr-blue-2);
+  background-color: var(--clr-green);
 }
 
 /* ------------------------------------------------------ */
@@ -108,7 +108,7 @@ header {
 
 .header__title {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -136,7 +136,10 @@ header {
 }
 
 .header__search:hover {
-  outline: 1px solid var(--clr-blue);
+  outline: 1px solid var(--clr-green);
+  border: #4fb646;
+  border-radius: 8.5px;
+
 }
 
 /* ------------------------------------------------------ */
