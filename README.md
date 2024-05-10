@@ -14,6 +14,8 @@ The Assets we convert them to digital assets as nfts
 ## Requirements For Initial Setup
 - In
 - stall [NodeJS](https://nodejs.org/en/)
+- For the project to work perfectly with truffle install `node >= 17.0`
+- If using `nvm` just use the latest version of node `nvm use 20`
 
 ## Setting Up
 ### 1. Clone/Download the Repository
