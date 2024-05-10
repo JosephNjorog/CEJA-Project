@@ -5,8 +5,6 @@ Blockchain replaces outdated paper deeds with true digital assets and tracks cha
 
 Ethereum enables transaction and property ownership records to be more accessible— facilitating market transactions, increasing investor confidence, unlocking access to finance, and promoting economic and social community development.
 
-
-
 ## Technology Stack & Tools
 
 - Solidity (Smart Contracts & Tests)
