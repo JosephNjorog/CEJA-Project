@@ -1,7 +1,5 @@
 # Tokenized Homes
-Real Estate NFT DApp
-
-![millow](https://github.com/tinniaru3005/tokenized-homes/assets/62856848/615687a7-99be-445d-afc8-536fd013243e)
+Real Estate NFT DApp that allows users to sell/Buy/Rent properties easily, secure and fast
 
 ## Technology Stack & Tools
 
@@ -11,8 +9,10 @@ Real Estate NFT DApp
 - [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
 - [React.js](https://reactjs.org/) (Frontend Framework)
 
+
 ## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/)
+- In
+- stall [NodeJS](https://nodejs.org/en/)
 
 ## Setting Up
 ### 1. Clone/Download the Repository
@@ -38,6 +38,7 @@ In a separate terminal execute:
 ### 1. Build the Docker image:
 
 `$ docker build -t tokenized-homes .`
+
 
 ### 2. Run the Docker container:
  `$ docker run -p 3000:3000 tokenized-homes`
