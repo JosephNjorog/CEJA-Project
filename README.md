@@ -1,4 +1,4 @@
-# Tokenized Homes
+# CEJA-Tokenized Homes
 Real Estate NFT DApp that allows users to sell/Buy/Rent properties easily, secure and fast
 
 ## Technology Stack & Tools
