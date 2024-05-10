@@ -1,6 +1,11 @@
 # CEJA-Homes
 Real Estate NFT DApp that allows users to sell/Buy/Rent properties easily, secure and fast
-The Assets we convert them to digital assets as nfts
+The Assets we convert them to digital assets as Nfts
+Blockchain replaces outdated paper deeds with true digital assets and tracks changes on an immutable ledger that acts as a secure shared source of truth for documents between multiple parties and organizations. 
+
+Ethereum enables transaction and property ownership records to be more accessible— facilitating market transactions, increasing investor confidence, unlocking access to finance, and promoting economic and social community development.
+
+
 
 ## Technology Stack & Tools
 
@@ -47,3 +52,8 @@ In a separate terminal execute:
  `$ docker run -p 3000:3000 tokenized-homes`
 
  This will start your application inside a Docker container and expose it on port 3000 of your host machine. You can access your application by navigating to `http://localhost:3000` in your web browser.
+
+### 3. Contribution
+If you are willing to contribute to this project once we make it public, fork the repo make the changes.
+Make a pull request and submit a detailed explanation for your changes.
+Currently this project weve made it private for demo purposes
