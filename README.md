@@ -1,5 +1,6 @@
 # CEJA-Homes
 Real Estate NFT DApp that allows users to sell/Buy/Rent properties easily, secure and fast
+The Assets we convert them to digital assets as nfts
 
 ## Technology Stack & Tools
 
